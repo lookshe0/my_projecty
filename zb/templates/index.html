@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>各高校招标信息首页</title>
+</head>
+<script>
+    function page(page){
+	document.location="xtgg_list.jsp?gglx2bh=KCGG_A&page="+page+"&searchText=";
+}
+</script>
+<style>
+    html, body
+    {
+        height: 100%;
+    }
+    body{text-align:center}
+    *
+    {
+        font-size: 12px;
+    }
+    div
+    {
+        display: block;
+    }
+    p
+    {
+        display: block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 0;
+        margin-inline-end: 0;
+    }
+    strong
+    {
+        font-weight: bold;
+    }
+     body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, th, td, img
+     {
+        border: medium none;
+        margin: 0;
+        padding: 0;
+    }
+    html, body, p, form, ul, h1, h2, h3, h4, h5, h6, dt, dd
+    {
+        margin: 0;
+        padding: 0;
+    }
+    form, ul, li, p, h1, h2, h3, h4, h5, h6
+    {
+        margin: 0;
+        padding: 0;
+    }
+    .maincenter
+    {
+        clear: both;
+        margin: 0 auto;
+        width: 1102px;
+    }
+    .f
+    {
+        width: 100%;
+        line-height: 22px;
+        margin: 0 auto 10px;
+    }
+    .filter
+    {
+        width: 1100px;
+        line-height: 22px;
+        margin: 0 auto 10px;
+        border: 1px solid #D4D5D6;
+    }
+    .filter, .filter a, .filter a:link
+    {
+        font-family: 'Microsoft yahei', serif;
+    }
+    .filter .tp
+    {
+        height: 22px;
+        padding: 9px 20px;
+        background-color: #F9F9F9;
+        border-top: none;
+    }
+    .filter .e, .filter .tp
+    {
+        position: relative;
+        padding: 9px 85px 9px 140px;
+        border-top: 1px dotted #BABABA;
+    }
+    .filter .e4, .filter .e5
+    {
+        padding-left: 88px;
+        padding-right: 5px;
+    }
+    .filter .e4 p
+    {
+        _margin-left: -88px;
+    }
+    .filter .e p, .filter .tp p
+    {
+        position: absolute;
+        height: 40px;
+        line-height: 40px;
+        left: 20px;
+        top: 0;
+    }
+    .filter .e strong, .filter .tp strong
+    {
+        width: 68px;
+    }
+    .filter .e strong, .filter .e b, .filter .e a, .filter .tp strong
+    {
+        float: left;
+    }
+    .filter .lkst
+    {
+        width: 100%;
+    }
+     filter .e4 a, .filter .e5 a
+     {
+        color: #909090;
+    }
+    .filter .e a, .filter .tp a
+    {
+        color: #000;
+        white-space: nowrap;
+        margin-right: 15px;
+    }
+    .filter .e strong, .filter .e b, .filter .e a, .filter .tp strong
+    {
+        float: left;
+    }
+    .filter, .filter a, .filter a:link
+    {
+        font-family: 'Microsoft yahei', serif;
+    }
+    body, a, a:link, a:visited, a:hover
+    {
+        font-family: "microsoft yahei", system-ui !important;
+    }
+    a:link
+    {
+        color: rgb(102, 102, 102);
+        font-family: Arial, 宋体, Helvetica, sans-serif;
+        text-decoration: none;
+    }
+    a
+    {
+        color: #333;
+        text-decoration: none;
+    }
+    a:-webkit-any-link
+    {
+        color: -webkit-link;
+        cursor: pointer;
+        text-decoration: underline;
+    }
+    .clear
+    {
+        clear: both;
+    }
+    .filter .tg
+    {
+        height: 40px;
+        line-height: 40px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #F9F9F9;
+    }
+    .filter .gt
+    {
+        line-height: 40px;
+        font-weight: bold;
+        background-color: #F9F9F9;
+    }
+    .search
+    {
+        float: right;
+        width: 50%;
+        height:46px;
+        display: inline;
+    }
+    .placeholder
+    {
+        border:1px solid #c8c8c8;
+        border-radius: 3px;
+        margin-left: 2px;
+        margin-top: 5px;
+        padding: 0;
+        width: 50%;
+        height: 36px;
+    }
+    #title
+    {
+        float: left;
+        width: 89%;
+        color: rgb(128, 128, 128);
+        font-size: large;
+    }
+    #table
+    {
+        width: 800px;
+        height:500px;
+        color: #0058a6;
+    }
+    .dd
+    {
+        line-height: 45px;
+    }
+   .dd1
+    {
+         width: 275px;
+    }
+    .dd2
+    {
+          width:550px;
+    }
+    #x
+    {
+        width:275px;
+        height: 22px;
+    }
+    #y
+    {
+        width: 550px;
+        height: 22px;
+    }
+</style>
+<body>
+    <div class="f">
+        <h1 id="title">高校招标公告</h1>
+        <div class="search">
+            <form target="_blank">
+                <label><input class="placeholder" placeholder="    回车搜索......" name="q"></label>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="maincenter">
+        <div class="filter">
+            <div class="tp"></div>
+            <div class="e e4">
+                <p>
+                    <strong>选择学校：</strong>
+                </p>
+                <div class="lkst">
+                    <a class >全部</a>
+                    <a class href="/sh" target="_blank">上海大学</a>
+                    <a class href="/bj" target="_blank">北京交通大学</a>
+                    <a class >厦门大学</a>
+                    <a class >华中农业大学</a>
+                    <a class >南京邮电大学</a>
+                    <a class >武汉大学</a>
+                    <a class >南通大学</a>
+                    <a class >石河子大学</a>
+                    <a class >国防科技大学大学</a>
+                    <a class >哈尔滨工业大学</a>
+                    <a class >南京师范大学</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="e e4">
+                <p>
+                    <strong>选择时间：</strong>
+                </p>
+                <div class="lkst">
+                    <a class >全部</a>
+                    <a class href="/oneweek" target="_blank">近一周</a>
+                    <a class href="/onemonth" target="_blank">近一个月</a>
+                    <a class href="/threemonths" target="_blank">近三个月</a>
+                    <a class href="/halfyear" target="_blank">近半年</a>
+                    <a class href="/oneyear" target="_blank">近一年</a>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="filter">
+
+            <table class="xs" align="center"  cellpadding="0" cellspacing="0">
+                <thread>
+                    <tr>
+                        <th id="x">发布时间</th>
+                        <th id="x">学校</th>
+                        <th id="y">标题</th>
+                    </tr>
+                </thread>
+
+                <tbody id="table">
+                   {% for info in page_obj%}
+                    <tr class="dd">
+                        <td class="dd1">{{ info.time }}</td>
+                        <td class="dd1">{{ info.name }}</td>
+                        <td class="dd2"><a href="/article/{{ info.id }}" target="_blank">{{ info.title }}</a></td>
+                    </tr>
+                    {%  endfor %}
+
+
+                </tbody>
+
+            </table>
+            <div class="pagination">
+                 {% if page_obj.has_previous %}
+                     <a href="?page={{ page_obj.previous_page_number }}">上一页</a>
+                 {% endif %}
+
+                 {% for num in page_obj.paginator.page_range %}
+                     {% if num == page_obj.number %}
+                        <span class="current-page">{{ num }}</span>
+                     {% elif num > page_obj.number|add:'-3' and num < page_obj.number|add:'3' %}
+                         <a href="?page={{ num }}">{{ num }}</a>
+                    {% endif %}
+                {% endfor %}
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">下一页</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+</html>
+
